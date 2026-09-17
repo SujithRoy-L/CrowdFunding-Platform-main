@@ -1,0 +1,40 @@
+# Java/Maven
+Backend-java/target/
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.log
+*.sh
+
+# Node/React/Vite
+Frontend/node_modules/
+Frontend/dist/
+Frontend/dist-ssr/
+Frontend/*.local
+Frontend/.npm/
+Frontend/uploads/
+
+# IDE and OS files
+.idea/
+.vscode/
+.apt_generated/
+.apt_generated_tests/
+.settings/
+*.classpath
+*.project
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300..900;1,300..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Space+Grotesk:wght@300..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+  --font-sans: CohereText, "SF Pro Text", "Space Grotesk", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: "Crimson Pro", Lora, "Tiempos Fine", Copernicus, Georgia, "Times New Roman", serif;
+  --font-mono: JetBrains Mono, SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fbf9f6;
+  color: #191919;
+  line-height: 1.6;
+}
+
+/* Typographic Scale for Headlines - Tight Letter Spacing & Proper Weights */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: #111111;
+}
+
+p, li {
+  letter-spacing: -0.005em;
+  line-height: 1.6;
+}
+
+/* Senior Level Utility classes for typography */
+.text-serif {
+  font-family: var(--font-serif);
+}
+
+.text-sans {
+  font-family: var(--font-sans);
+}
+
+.text-mono {
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+}
+
+/* Ensure inputs and buttons match the primary font */
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #191919 !important;
+}
+
+.hero-section {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&q=80&w=2070");
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  color: white;
+  padding: 100px 0;
+}
+
+.campaign-card {
+  transition: transform 0.3s ease;
+}
+
+.campaign-card:hover {
+  transform: translateY(-5px);
+}
+
+.footer {
+  background-color: #191919;
+  color: white;
+  padding: 40px 0;
+}
+
+/* ------------------------------------------------------------- */
+/* PREMIUM TOAST OVERRIDES (Apple, Claude & Cohere Inspired)    */
+/* ------------------------------------------------------------- */
+
+/* React-Toastify Container & Cards */
+.Toastify__toast-container {
+  font-family: var(--font-sans) !important;
+  padding: 1rem !important;
+}
+
+.Toastify__toast {
+  background: rgba(255, 255, 255, 0.82) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(227, 224, 216, 0.7) !important;
+  border-radius: 20px !important;
+  color: #191919 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.01) !important;
+  padding: 1rem 1.25rem !important;
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.Toastify__toast-body {
+  padding: 0 !important;
+  margin: 0 !important;
+  color: #191919 !important;
+}
+
+.Toastify__close-button {
+  color: #6e6e73 !important;
+  opacity: 0.7;
+  align-self: center !important;
+  &:hover {
+    color: #191919 !important;
+    opacity: 1;
+  }
+}
+
+.Toastify__progress-bar {
+  background: #191919 !important;
+  height: 3px !important;
+}
+
+/* React-Hot-Toast Custom overrides */
+.hot-toast-card {
+  background: rgba(255, 255, 255, 0.82) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(227, 224, 216, 0.7) !important;
+  border-radius: 20px !important;
+  color: #191919 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02) !important;
+  font-family: var(--font-sans) !important;
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  padding: 0.85rem 1.25rem !important;
+  max-width: 380px !important;
+}
+
+/* Sonner custom style adjustments */
+[data-sonner-toast] {
+  background: rgba(255, 255, 255, 0.82) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(227, 224, 216, 0.7) !important;
+  border-radius: 20px !important;
+  color: #191919 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02) !important;
+  font-family: var(--font-sans) !important;
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  padding: 1rem 1.25rem !important;
+}
+[data-sonner-toast] [data-title] {
+  color: #191919 !important;
+  font-weight: 700 !important;
+}
+[data-sonner-toast] [data-description] {
+  color: #6e6e73 !important;
+}
+[data-sonner-toast] button {
+  background: #191919 !important;
+  color: #ffffff !important;
+  border-radius: 99px !important;
+  font-weight: 600 !important;
+}
+
+

@@ -1,0 +1,15 @@
+.startup-fund-title:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+/* Use the same styles as home page for consistency */
+.admin-dashboard .card {
+  transition: transform 0.2s ease;
+}
+
+.admin-dashboard .card:hover {
+  transform: translateY(-5px);
+}
+
+/* Add any other styles you want to match with home page */

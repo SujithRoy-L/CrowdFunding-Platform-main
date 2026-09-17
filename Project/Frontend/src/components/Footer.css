@@ -1,0 +1,36 @@
+/* Keep existing styles */
+.footer {
+  background-color: #191919;
+  color: white;
+}
+
+.footer h5 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footer p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.footer ul {
+  padding-left: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+.footer ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  transition:
+    color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.footer ul li a:hover {
+  color: #0071e3 !important;
+  transform: translateX(5px);
+  text-decoration: underline;
+}

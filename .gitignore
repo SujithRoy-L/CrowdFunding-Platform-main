@@ -1,0 +1,27 @@
+# VS Code and local IDE files
+.vscode/
+
+# Project-local generated files
+Project/Backend-java/target/
+Project/Backend-java/.apt_generated/
+Project/Backend-java/.apt_generated_tests/
+Project/Backend-java/.settings/
+Project/Backend-java/.classpath
+Project/Backend-java/.project
+Project/Frontend/node_modules/
+Project/Frontend/dist/
+Project/Frontend/dist-ssr/
+
+# Runtime uploads and local data
+Project/Frontend/uploads/
+
+# Environment and local configuration
+.env
+.env.*
+!.env.example
+**/*.local
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db

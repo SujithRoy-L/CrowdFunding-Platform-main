@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: crowdfunding-backend
+    env: docker
+    rootDir: Project/Backend-java
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        sync: false
+      - key: SPRING_DATASOURCE_USERNAME
+        sync: false
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false
